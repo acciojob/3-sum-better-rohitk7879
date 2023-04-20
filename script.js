@@ -26,7 +26,7 @@ function threeSum(arr, target) {
 		let k = arr.length-1;
 		while(j < k){  
 		    let sum = (arr[i]) + (arr[j]) + (arr[k]);
-    		let curr_diff = Math.abs(Math.abs(sum) - Math.abs(res));
+    		// let curr_diff = Math.abs(Math.abs(sum) - Math.abs(res));
 			if(Math.abs(target - sum ) < Math.abs(target - res)){
 				res = sum;
 			}
